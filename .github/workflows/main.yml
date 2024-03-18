@@ -1,4 +1,4 @@
-name: Maven Build
+name: Maven Build verify
 
 on:
   push:
