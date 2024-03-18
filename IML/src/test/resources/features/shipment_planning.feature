@@ -6,7 +6,6 @@ Feature: End-to-End Workflow for PICKLOAD-ODR Order Processing
   Scenario: Order/shipment verification
     Given I am logged in to the Order Tracking Management system
     When I am on the "Order Release" page
-    And I switch to "mainIFrameStr" Iframe
     And I enter the order type "PICKLOADED-DROPLOADED-ODR" into the search field
     And I click on the Search button
     Then I switch to "Related Buy Shipments" page
@@ -29,7 +28,6 @@ Feature: End-to-End Workflow for PICKLOAD-ODR Order Processing
   Scenario: Assign driver to the shipment
     Given I am logged in to the Order Tracking Management system
     When I am on the "Order Release" page
-    And I switch to "mainIFrameStr" Iframe
     And I enter the order type "PICKLOADED-DROPLOADED-ODR" into the search field
     And I click on the Search button
     Then I switch to "Related Buy Shipments" page

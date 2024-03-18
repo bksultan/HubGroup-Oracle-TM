@@ -8,7 +8,6 @@ Feature: End-to-End Workflow for Order Release ID Processing
 
   Scenario: PICKLOADED-DROPLOADED-ODR Order Release ID flow
     When I am on the "Order Release" page
-    And I switch to "mainIFrameStr" Iframe
     And I enter the order type "PICKLOADED-DROPLOADED-ODR" into the search field
     And I click on the Search button
     Then I click on Order number
@@ -19,7 +18,6 @@ Feature: End-to-End Workflow for Order Release ID Processing
 
   Scenario: LIVELOADED-DROPLOADED-ODR Order Release ID flow
     When I am on the "Order Release" page
-    And I switch to "mainIFrameStr" Iframe
     And I enter the order type "LIVELOADED-DROPLOADED-ODR" into the search field
     And I click on the Search button
     Then I click on Order number

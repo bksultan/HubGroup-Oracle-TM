@@ -2,17 +2,14 @@ package steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.model.environment.EnvironmentSpecificConfiguration;
 import net.thucydides.model.util.EnvironmentVariables;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 
 import static pages.Home.HOME_PAGE_ELEMENT_XPATHS;
 import static pages.Login.LOGIN_PAGE_ELEMENT_XPATHS;
-import static pages.OrderRelease.ORDER_RELEASE_PAGE_ELEMENT_XPATHS;
+import static pages.TileLinks.getLink;
 import static utilities.Iframe.switchToIframe;
 import static utilities.Utilities.getSecret;
 import static utilities.WebInteractionsUtils.*;
@@ -46,22 +43,8 @@ public class Common extends PageObject {
     }
 
     @When("I am on the {string} page")
-    public void searchBy(String option) throws InterruptedException {
-        getElementWithWait("homeBtn", HOME_PAGE_ELEMENT_XPATHS).click();
-        Thread.sleep(3000);
-
-        switch (option) {
-            case "Order Release":
-                getElementWithWait("navigatorButton", HOME_PAGE_ELEMENT_XPATHS).click();
-                getElementWithWait("orderRelease", HOME_PAGE_ELEMENT_XPATHS).click();
-                getElementWithWait("orderReleaseContent", HOME_PAGE_ELEMENT_XPATHS).click();
-                break;
-            case "Integration Manager":
-                getElementWithWait("navigatorButton", HOME_PAGE_ELEMENT_XPATHS).click();
-                getElementWithWait("Integration", HOME_PAGE_ELEMENT_XPATHS).click();
-                getElementWithWait("IntegrationManager", HOME_PAGE_ELEMENT_XPATHS).click();
-                break;
-        }
+    public void openLink(String option) throws InterruptedException {
+        openAt(getLink(option));
     }
 
     @And("I switch to {string} Iframe")
@@ -74,5 +57,13 @@ public class Common extends PageObject {
         switchToDefaultIframe();
     }
 
+
+    @When("I am on the Integration Manager page")
+    public void searchBy() {
+        clickWithJS(getXpath("homeBtn", HOME_PAGE_ELEMENT_XPATHS));
+        clickWithJS(getXpath("navigatorButton", HOME_PAGE_ELEMENT_XPATHS));
+        clickWithJS(getXpath("Integration", HOME_PAGE_ELEMENT_XPATHS));
+        clickWithJS(getXpath("IntegrationManager", HOME_PAGE_ELEMENT_XPATHS));
+    }
 
 }

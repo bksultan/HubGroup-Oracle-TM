@@ -42,7 +42,7 @@ public class WebInteractionsUtils extends PageObject {
         return element;
     }
 
-    public static void clickUsingJavaScript(String element) {
+    public static void clickWithJS(String element) {
         JavascriptExecutor executor = (JavascriptExecutor) getStaticDriver();
         WebDriver driver = getStaticDriver();
         WebElement elementToClick = driver.findElement(By.xpath(element));
