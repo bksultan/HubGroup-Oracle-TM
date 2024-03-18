@@ -23,8 +23,8 @@ jobs:
       - name: Create secrets.properties
         run: |
           mkdir -p src/test/resources/data/
-          echo "username=${{ secrets.USERNAME }}" > src/test/resources/data/secrets.properties
-          echo "password=${{ secrets.PASSWORD }}" >> src/test/resources/data/secrets.properties
+          echo "username=${{ secrets.USERNAME }}" > IML/src/test/resources/data/secrets.properties
+          echo "password=${{ secrets.PASSWORD }}" >> IML/src/test/resources/data/secrets.properties
         shell: bash
 
       - name: Build with Maven
