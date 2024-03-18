@@ -28,4 +28,4 @@ jobs:
         shell: bash
 
       - name: Build with Maven
-        run: mvn clean verify -Denvironment=ua -pl IML
+        run: mvn clean verify -Denvironment=default
