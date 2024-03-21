@@ -65,6 +65,17 @@ public class Utilities extends PageObject {
         }
     }
 
+    public static String getCredentials(String key) {
+        try {
+            Properties properties = readPropertyFile("src/test/resources/data/credentials_for_testing.properties");
+            String value = properties.getProperty(key);
+            return value;
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            throw new RuntimeException();
+        }
+    }
+
     public static void switchToNewTab() {
         originalHandle = getStaticDriver().getWindowHandle();
         for (String handle : getStaticDriver().getWindowHandles()) {

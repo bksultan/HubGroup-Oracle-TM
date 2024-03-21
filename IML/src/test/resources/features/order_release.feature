@@ -3,10 +3,8 @@ Feature: End-to-End Workflow for Order Release ID Processing
 
   I want to ensure that orders created
 
-  Background: : Login to OTM
-    Given I am logged in to the Order Tracking Management system
-
   Scenario: PICKLOADED-DROPLOADED-ODR Order Release ID flow
+    Given I am logged in to the Order Tracking Management system
     When I am on the "Order Release" page
     And I enter the order type "PICKLOADED-DROPLOADED-ODR" into the search field
     And I click on the Search button

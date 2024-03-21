@@ -16,10 +16,11 @@ public class Integration {
     }
 
     @Given("I upload {string} xml")
-    public void uploadXml(String order) {
+    public void uploadXml(String order) throws InterruptedException {
         String basePath = System.getProperty("user.dir");
         inputInMainIframe(getXpath("integrationFileUpload", INTEGRATION_ELEMENT_XPATHS), basePath + "/src/test/resources/xml-generated/" + order + ".xml");
         clickInMainIframe(getXpath("uploadButton", INTEGRATION_ELEMENT_XPATHS));
+        Thread.sleep(2000);
         getDriver().navigate().back();
     }
 }

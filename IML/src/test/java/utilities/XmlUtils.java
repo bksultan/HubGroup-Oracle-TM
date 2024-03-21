@@ -8,22 +8,31 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class XmlUtils {
     private static final Random random = new Random();
+    private static final String CHARACTERS = "0123456789ABCDEF";
+    private static final int HEX_LENGTH = 8;
 
     public static String convertToStringXmlOrder(String fileName) {
-        String content;
+        String filePath = "src/test/resources/xml-template/" + fileName + ".xml";
         try {
-            content = new String(Files.readAllBytes(Paths.get("src/test/resources/xml-template/" + fileName + ".xml")));
+            String content = Files.readString(Paths.get(filePath));
+            String result = generateRandomString();
+            return content.replaceAll("Transmission_ID", result);
         } catch (IOException e) {
             throw new RuntimeException("Failed to read XML file: " + fileName, e);
         }
-        return content;
+    }
+
+    public static String generateRandomString() {
+        String uuidPart = UUID.randomUUID().toString().toUpperCase();
+        StringBuilder hexPart = new StringBuilder(HEX_LENGTH);
+        for (int i = 0; i < HEX_LENGTH; i++) {
+            hexPart.append(CHARACTERS.charAt(random.nextInt(CHARACTERS.length())));
+        }
+        return uuidPart + "-" + hexPart.toString();
     }
 
     public static String orderReleaseIDGeneration(String content) {

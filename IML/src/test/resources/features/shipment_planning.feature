@@ -11,7 +11,6 @@ Feature: End-to-End Workflow for PICKLOAD-ODR Order Processing
     Then I switch to "Related Buy Shipments" page
     And I click on Shipment ID
     And I verify status of "WORK_INVOICE_GENERATION" is = "WORK_INVOICE_GENERATION_NOT_STARTED"
-    And I switch to "mainIFrameStr" Iframe
     And I verify shipment reference numbers
     When I switch to "Stops" tab
     Then I get the distance of last stop

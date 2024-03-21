@@ -65,7 +65,7 @@ public class Shipment {
     }
 
     @And("I assign the {string} driver")
-    public void assignTheDriver(String driverID) {
+    public void assignTheDriver(String driverID) throws InterruptedException {
         getElementWithWait("fleetManagement", SHIPMENT_PAGE_ELEMENT_XPATHS).click();
         getElementWithWait("assign", SHIPMENT_PAGE_ELEMENT_XPATHS).click();
         getElementWithWait("driver", SHIPMENT_PAGE_ELEMENT_XPATHS).click();
@@ -75,7 +75,7 @@ public class Shipment {
         getElementWithWait("dropEmptyBeforeFreightCheckbox", SHIPMENT_PAGE_ELEMENT_XPATHS).click();
         getElementWithWait("driverIDInput", SHIPMENT_PAGE_ELEMENT_XPATHS).sendKeys(getSecret(driverID));
         getElementWithWait("okButton", SHIPMENT_PAGE_ELEMENT_XPATHS).click();
-
+        Thread.sleep(5000);
         switchBackToOriginalTab();
     }
 }
