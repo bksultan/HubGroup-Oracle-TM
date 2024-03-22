@@ -74,7 +74,7 @@ public class WebInteractionsUtils extends PageObject {
         Thread.sleep(5000);
         getElementWithWait("userSettingsButton", HOME_PAGE_ELEMENT_XPATHS).click();
         Thread.sleep(5000);
-        getElement("userRole", HOME_PAGE_ELEMENT_XPATHS).click();
+        getElementWithWait("userRole", HOME_PAGE_ELEMENT_XPATHS).click();
 
         WebElement elementToClick = driver.findElement(By.xpath("//oj-highlight-text[@text='" +  role.toUpperCase() + "']"));
         elementToClick.click();

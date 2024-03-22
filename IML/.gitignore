@@ -1,3 +1,6 @@
+src/test/resources/data/config.properties
+src/test/resources/xml-generated
+
 target/
 build
 .github
