@@ -11,6 +11,7 @@
     <modules>
         <module>IML</module>
         <module>LGS</module>
+        <module>OPS</module>
     </modules>
 
     <properties>
