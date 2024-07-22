@@ -5,6 +5,7 @@ Feature: End-to-End Workflow for Order Release ID Processing
 
   Scenario: PICKLOADED-DROPLOADED-ODR Order Release ID flow
     Given I am logged in to the Order Tracking Management system
+    And I change the role to "ADMIN | CORP/HUB"
     When I am on the "Order Release" page
     And I enter the order type "PICKLOADED-DROPLOADED-ODR" into the search field
     And I click on the Search button

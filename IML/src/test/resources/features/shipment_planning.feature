@@ -5,6 +5,7 @@ Feature: End-to-End Workflow for PICKLOAD-ODR Order Processing
   @TC-003 @TC-004 @TC-006 @TC-008 @TC-010 @TC-011
   Scenario: Order/shipment verification
     Given I am logged in to the Order Tracking Management system
+    And I change the role to "ADMIN | CORP/HUB"
     When I am on the "Order Release" page
     And I enter the order type "PICKLOADED-DROPLOADED-ODR" into the search field
     And I click on the Search button
@@ -26,6 +27,7 @@ Feature: End-to-End Workflow for PICKLOAD-ODR Order Processing
   @TC-014
   Scenario: Assign driver to the shipment
     Given I am logged in to the Order Tracking Management system
+    And I change the role to "ADMIN | CORP/HUB"
     When I am on the "Order Release" page
     And I enter the order type "PICKLOADED-DROPLOADED-ODR" into the search field
     And I click on the Search button

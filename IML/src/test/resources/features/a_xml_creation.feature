@@ -22,7 +22,7 @@ Feature: Upload XML from Integration Manager workflow
   @xml @xml-upload
   Scenario: Upload XML order from Integration Manager
     Given I am logged in to the Order Tracking Management system
-    And I change the role to "ADMIN"
+    And I change the role to "ADMIN | CORP/HUB"
     When I am on the Integration Manager page
     And I am on the Upload an XML-CSV Transmission page
     Then I upload "PICKLOADED-DROPLOADED-ODR" xml
