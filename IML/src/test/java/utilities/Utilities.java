@@ -54,6 +54,17 @@ public class Utilities extends PageObject {
         }
     }
 
+    public static String getProperty(String module, String file, String key) {
+        try {
+            Properties properties = readPropertyFile(module + "/src/test/resources/" + file + ".properties");
+            String value = properties.getProperty(key);
+            return value;
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            throw new RuntimeException();
+        }
+    }
+
     public static String getSecret(String key) {
         try {
             Properties properties = readPropertyFile("src/test/resources/data/secrets.properties");
