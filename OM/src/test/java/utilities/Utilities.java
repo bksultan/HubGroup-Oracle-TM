@@ -11,8 +11,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Utilities extends PageObject {
-    private static String originalHandle;
-
     public static void writeProperty(String key, String value, String file) {
         Properties prop = new Properties();
         String filePath = "src/test/resources/data/" + file + ".properties";
@@ -85,20 +83,6 @@ public class Utilities extends PageObject {
             ex.printStackTrace();
             throw new RuntimeException();
         }
-    }
-
-    public static void switchToNewTab() {
-        originalHandle = getStaticDriver().getWindowHandle();
-        for (String handle : getStaticDriver().getWindowHandles()) {
-            if (!handle.equals(originalHandle)) {
-                getStaticDriver().switchTo().window(handle);
-                break;
-            }
-        }
-    }
-
-    public static void switchBackToOriginalTab() {
-        getStaticDriver().switchTo().window(originalHandle);
     }
 
     public static void attachToReport(String title, String message) {
