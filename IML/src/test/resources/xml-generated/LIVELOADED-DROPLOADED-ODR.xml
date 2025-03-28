@@ -1,6 +1,7 @@
-<otm:Transmission xmlns:otm="http://xmlns.oracle.com/apps/otm/transmission/v6.4" xmlns:gtm="http://xmlns.oracle.com/apps/gtm/transmission/v6.4">
+<otm:Transmission xmlns:otm="http://xmlns.oracle.com/apps/otm/transmission/v6.4"
+                  xmlns:gtm="http://xmlns.oracle.com/apps/gtm/transmission/v6.4">
     <otm:TransmissionHeader>
-        <otm:SenderTransmissionNo>969B46BF-C540-4899-9071-F48850CFB11D-3D4C0479</otm:SenderTransmissionNo>
+        <otm:SenderTransmissionNo>C4F44E9D-0974-40E2-851B-047842590A72-9FAA6AC8</otm:SenderTransmissionNo>
         <otm:Refnum>
             <otm:RefnumQualifierGid>
                 <otm:Gid>
@@ -17,7 +18,7 @@
                     <otm:Xid>EVENT_KEY</otm:Xid>
                 </otm:Gid>
             </otm:RefnumQualifierGid>
-            <otm:RefnumValue>019006760130201</otm:RefnumValue>
+            <otm:RefnumValue>019003573540201</otm:RefnumValue>
         </otm:Refnum>
         <otm:DataQueueGid>
             <otm:Gid>
@@ -32,7 +33,7 @@
                 <otm:ReleaseGid>
                     <otm:Gid>
                         <otm:DomainName>CORP/HUB</otm:DomainName>
-                        <otm:Xid>019006760130201</otm:Xid>
+                        <otm:Xid>019003573540201</otm:Xid>
                     </otm:Gid>
                 </otm:ReleaseGid>
                 <otm:TransactionCode>RC</otm:TransactionCode>
@@ -62,11 +63,11 @@
                         <otm:ForSourceDest>D</otm:ForSourceDest>
                     </otm:ReleaseSpecialService>
                     <otm:FlexFieldStrings>
-                        <otm:Attribute2>~</otm:Attribute2>
+                        <otm:Attribute2></otm:Attribute2>
                         <otm:Attribute3>CN53</otm:Attribute3>
                         <otm:Attribute4>IML</otm:Attribute4>
-                        <otm:Attribute11>1000582</otm:Attribute11>
-                        <otm:Attribute13>TARGET CORPORATION</otm:Attribute13>
+                        <otm:Attribute11>1054689</otm:Attribute11>
+                        <otm:Attribute13>I2 - LOWES</otm:Attribute13>
                         <otm:Attribute15>IML</otm:Attribute15>
                     </otm:FlexFieldStrings>
                     <otm:FlexFieldDates>
@@ -83,7 +84,7 @@
                         <otm:LocationGid>
                             <otm:Gid>
                                 <otm:DomainName>CORP</otm:DomainName>
-                                <otm:Xid>L516723036-1000582</otm:Xid>
+                                <otm:Xid>L185225235-1054689</otm:Xid>
                             </otm:Gid>
                         </otm:LocationGid>
                     </otm:LocationRef>
@@ -93,30 +94,30 @@
                         <otm:LocationGid>
                             <otm:Gid>
                                 <otm:DomainName>CORP</otm:DomainName>
-                                <otm:Xid>RAIL_RAMP_UPDALAS</otm:Xid>
+                                <otm:Xid>RAIL_RAMP_UPTAC44</otm:Xid>
                             </otm:Gid>
                         </otm:LocationGid>
                     </otm:LocationRef>
                 </otm:ShipToLocationRef>
                 <otm:TimeWindow>
                     <otm:EarlyPickupDt>
-                        <otm:GLogDate>20240322163303</otm:GLogDate>
+                        <otm:GLogDate>20240724104222</otm:GLogDate>
                     </otm:EarlyPickupDt>
                     <otm:LatePickupDt>
-                        <otm:GLogDate>20240323163303</otm:GLogDate>
+                        <otm:GLogDate>20240725104222</otm:GLogDate>
                     </otm:LatePickupDt>
                     <otm:EarlyDeliveryDt>
-                        <otm:GLogDate>20240326163303</otm:GLogDate>
+                        <otm:GLogDate>20240728104222</otm:GLogDate>
                     </otm:EarlyDeliveryDt>
                     <otm:LateDeliveryDt>
-                        <otm:GLogDate>20240327163303</otm:GLogDate>
+                        <otm:GLogDate>20240729104222</otm:GLogDate>
                     </otm:LateDeliveryDt>
                 </otm:TimeWindow>
                 <otm:ReleaseLine>
                     <otm:ReleaseLineGid>
                         <otm:Gid>
                             <otm:DomainName>CORP/HUB</otm:DomainName>
-                            <otm:Xid>019006760130201-01</otm:Xid>
+                            <otm:Xid>019003573540201-01</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseLineGid>
                     <otm:PackagedItemRef>
@@ -155,7 +156,7 @@
                     <otm:ShipUnitGid>
                         <otm:Gid>
                             <otm:DomainName>CORP/HUB</otm:DomainName>
-                            <otm:Xid>019006760130201-01</otm:Xid>
+                            <otm:Xid>019003573540201-01</otm:Xid>
                         </otm:Gid>
                     </otm:ShipUnitGid>
                     <otm:WeightVolume>
@@ -228,13 +229,13 @@
                         <otm:ReleaseGid>
                             <otm:Gid>
                                 <otm:DomainName>CORP/HUB</otm:DomainName>
-                                <otm:Xid>019006760130201</otm:Xid>
+                                <otm:Xid>019003573540201</otm:Xid>
                             </otm:Gid>
                         </otm:ReleaseGid>
                         <otm:ReleaseLineGid>
                             <otm:Gid>
                                 <otm:DomainName>CORP/HUB</otm:DomainName>
-                                <otm:Xid>019006760130201-01</otm:Xid>
+                                <otm:Xid>019003573540201-01</otm:Xid>
                             </otm:Gid>
                         </otm:ReleaseLineGid>
                     </otm:ShipUnitContent>
@@ -243,7 +244,7 @@
                             <otm:Xid>STCC</otm:Xid>
                         </otm:Gid>
                     </otm:FlexCommodityQualifierGid>
-                    <otm:FlexCommodityValue>3071145</otm:FlexCommodityValue>
+                    <otm:FlexCommodityValue>2399990</otm:FlexCommodityValue>
                 </otm:ShipUnit>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -252,7 +253,7 @@
                             <otm:Xid>ORIGIN_RAMP</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>DALAS - DALLAS</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>TAC44 - TACSIM</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -261,7 +262,7 @@
                             <otm:Xid>DESTINATION_RAMP</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>LOSAN - LOS ANGELES</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>GLO2 - GLOBAL 2</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -279,7 +280,7 @@
                             <otm:Xid>TERRITORY</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>47</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>82</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -288,7 +289,7 @@
                             <otm:Xid>SUB_TERRITORY</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>02</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>01</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -297,7 +298,7 @@
                             <otm:Xid>SERVICE_AREA</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>N TEXAS</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>SEATTLE METRO</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -315,7 +316,7 @@
                             <otm:Xid>BENEFICIAL_OWNER</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>582 TARGET CORPORATION</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>54689 I2 - LOWES</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -342,7 +343,8 @@
                             <otm:Xid>HUB_CONTACT_INFO</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>NAME: TARGET TEAM PHONE: 630-437-6000 EMAIL: TARGETTEAM@HUBGROUP.COM</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>NAME: LOWES TEAM PHONE: 1-630-437-6230 EMAIL: LOWESTEAM@HUBGROUP.COM
+                    </otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -360,7 +362,7 @@
                             <otm:Xid>ORDER_NUMBER</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>900415255</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>900416432</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -378,7 +380,7 @@
                             <otm:Xid>TERMINAL</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>0078</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>*DFT</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -387,7 +389,7 @@
                             <otm:Xid>BOL_REQUIRED_FOR_DELV</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>NO</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>YES</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -405,7 +407,7 @@
                             <otm:Xid>LINEHAUL_SCAC</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>UPHU,DALLAS,TX</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>UPHU,TACSIM,WA</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -420,10 +422,21 @@
                     <otm:ReleaseRefnumQualifierGid>
                         <otm:Gid>
                             <otm:DomainName>CORP</otm:DomainName>
+                            <otm:Xid>PAPERWORK_LIST</otm:Xid>
+                        </otm:Gid>
+                    </otm:ReleaseRefnumQualifierGid>
+                    <otm:ReleaseRefnumValue>N~BOL~00010101000000~00010101000000|N~POD~00010101000000~00010101000000
+                    </otm:ReleaseRefnumValue>
+                </otm:ReleaseRefnum>
+                <otm:ReleaseRefnum>
+                    <otm:ReleaseRefnumQualifierGid>
+                        <otm:Gid>
+                            <otm:DomainName>CORP</otm:DomainName>
                             <otm:Xid>STOP_REMARKS</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>EQP LOC: PEACOCK ENGINEERING, 1800 AVERILL RD, GENEVA, IL</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>EQP LOC: LOWE'S #992 INDIAN R, 1301 W JFK DR, NORTH VERNON, IN
+                    </otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -432,7 +445,19 @@
                             <otm:Xid>LINEHAUL_COST</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>SELECTED: NOP# 1 UPHU/DALAS/LOSAN COST: 474.00 ** FLEET: NOP# 1 UPHU/DALAS/LOSAN COST: 474.00 ** NON-FLEET: NOP# 2 EMP/DALAS/LOSAN COST: 800.00 ** DIFFERENCE: 326.00</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>SELECTED: NOP# 1 UPHU/TAC44/GLO2 COST: 1105.00 ** FLEET: NOP# 1
+                        UPHU/TAC44/GLO2 COST: 1105.00 ** NON-FLEET: NOP# 3 EMP/TAC44/GLO2 COST: 1250.00 ** DIFFERENCE:
+                        145.00
+                    </otm:ReleaseRefnumValue>
+                </otm:ReleaseRefnum>
+                <otm:ReleaseRefnum>
+                    <otm:ReleaseRefnumQualifierGid>
+                        <otm:Gid>
+                            <otm:DomainName>CORP</otm:DomainName>
+                            <otm:Xid>PAPERWORK_STATUS</otm:Xid>
+                        </otm:Gid>
+                    </otm:ReleaseRefnumQualifierGid>
+                    <otm:ReleaseRefnumValue>BILL OF LADING</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -441,7 +466,9 @@
                             <otm:Xid>SHIPPER</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>CUSTOMER NAME: TARGET 578 TYLER TEXAS DC, ADDRESS: 13790 COUNTY ROAD 433, CITY: TYLER, STATE: TX, ZIP: 757060000, CONTACT:</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>CUSTOMER NAME: BFI3, ADDRESS: 2700 CENTER DR, CITY: DUPONT, STATE: WA, ZIP:
+                        983279607, CONTACT:
+                    </otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -450,7 +477,9 @@
                             <otm:Xid>CONSIGNEE</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>CUSTOMER NAME: TIC, ADDRESS: 1229 E WALNUT ST, CITY: CARSON, STATE: CA, ZIP: 907461318, CONTACT:</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>CUSTOMER NAME: LOWE'S #992 INDIAN RC, ADDRESS: 1301 W JFK DR, CITY: NORTH
+                        VERNON, STATE: IN, ZIP: 472656117, CONTACT:
+                    </otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -504,7 +533,7 @@
                             <otm:Xid>BENEFICIAL_OWNER_ID</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>1000582</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>1054689</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -513,7 +542,7 @@
                             <otm:Xid>OMS_LINEHAUL_COST</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>302.00</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>157.00</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -522,7 +551,7 @@
                             <otm:Xid>OMS_FUEL_COST</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>52.70</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>11.39</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:ReleaseRefnum>
                     <otm:ReleaseRefnumQualifierGid>
@@ -531,7 +560,7 @@
                             <otm:Xid>TENDER_SELECTION_CODE</otm:Xid>
                         </otm:Gid>
                     </otm:ReleaseRefnumQualifierGid>
-                    <otm:ReleaseRefnumValue>BID</otm:ReleaseRefnumValue>
+                    <otm:ReleaseRefnumValue>MANUAL</otm:ReleaseRefnumValue>
                 </otm:ReleaseRefnum>
                 <otm:Remark>
                     <otm:TransactionCode>II</otm:TransactionCode>
@@ -543,7 +572,10 @@
                         </otm:Gid>
                     </otm:RemarkQualifierGid>
                     <otm:RemarkLevel>1</otm:RemarkLevel>
-                    <otm:RemarkText>CARRIER AGREES TO COMPLY W/ACCESSORIAL AND ALL TERMS AT CARRTERMS.COM/REGULATORY - MUST USE U.P. COMPATIBLE 53 FT HUB FLEET - Eqp Loc: PEACOCK ENGINEERING, 1800 AVERILL RD, GENEVA, IL</otm:RemarkText>
+                    <otm:RemarkText>CARRIER AGREES TO COMPLY W/ACCESSORIAL AND ALL TERMS AT CARRTERMS.COM/REGULATORY -
+                        MUST USE U.P. COMPATIBLE 53 FT HUB FLEET - Eqp Loc: LOWE'S #992 INDIAN R, 1301 W JFK DR, NORTH
+                        VERNON, IN
+                    </otm:RemarkText>
                 </otm:Remark>
                 <otm:Remark>
                     <otm:TransactionCode>II</otm:TransactionCode>
